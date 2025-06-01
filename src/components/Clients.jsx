@@ -1,23 +1,24 @@
 import React from 'react';
 
 const Clients = () => {
-  const clients = [
-    { name: "Bloomberg Philanthropies", logo: "/src/assets/knowledge.png" }, 
-    { name: "Maisha Bora Sacco Society Ltd", logo: "src/assets/maishabora1.png" }, 
-    { name: "Sika Building Trust", logo: "/assets/sika-building-trust.svg" }, 
-    { name: "Knowledge Hub Institute", logo: "src/assets/Knowledge.png" },
-    { name: "Cyber Shujaa", logo: "src/assets/cybershujaa.webp" }, 
-    { name: "NCBA", logo: "src/assets/ncba.png" }, 
-    { name: "Chuna DT Sacco Ltd", logo: "src/assets/chuna.png" }, 
-    { name: "Institute of Pension Management", logo: "src/assets/pension.jpg" }, 
-    { name: "Nafasi Sacco", logo: "/assets/nafasi-sacco.svg" }, 
-    { name: "Ukoaji Sacco", logo: "/assets/ukoaji-sacco.svg" }, 
-    { name: "Utabibu", logo: "/assets/utabibu.svg" }, 
-    { name: "KMA Sacco", logo: "/assets/kma-sacco.svg" }, 
-    { name: "Pivot Assets", logo: "/assets/pivot-assets.svg" }, 
-    { name: "Finnet", logo: "src/assets/Finnet.png" }, 
-    { name: "Sentinel Africa", logo: "/assets/sentinel-africa.svg" } 
-  ];
+ const clients = [
+  { name: "Bloomberg Philanthropies", logo: "/assets/bloo.jpg", url: "https://www.bloomberg.org/" },
+  { name: "Maisha Bora Sacco Society Ltd", logo: "/assets/maisha.jpg", url: "https://maishaborasacco.com/" },
+  { name: "Sika Building Trust", logo: "/assets/sika.png", url: "https://kenya.sika.com/" },
+  { name: "Knowledge Hub Institute", logo: "/assets/Knowledge.png", url: "https://knowledgehub.co.ke/" },
+  { name: "Cyber Shujaa", logo: "/assets/cybershujaa.webp", url: "https://cybershujaa.co.ke/" },
+  { name: "NCBA", logo: "/assets/ncba.png", url: "https://ncbagroup.com/" },
+  { name: "Chuna DT Sacco Ltd", logo: "/assets/chuna.png", url: "https://chunasacco.co.ke/" },
+  { name: "Institute of Pension Management", logo: "/assets/pension.jpg", url: "https://ipm.ac.ke/" },
+  { name: "Nafasi Sacco", logo: "/assets/nafasi.png", url: "https://nafasisacco.com/" },
+  { name: "Ukoaji Sacco", logo: "/assets/uokoaji.jpg", url: "https://ukoajisacco.com/" },
+  { name: "Utabibu", logo: "/assets/utabibu.png", url: "https://utabibusacco.com/" },
+  { name: "KMA Sacco", logo: "/assets/kms.png", url: "https://kmasacco.com/" },
+  { name: "Pivot Assets", logo: "/assets/pivot.png", url: "https://pivotassets.co.ke/" },
+  { name: "Finnet", logo: "/assets/Finnet.png", url: "https://www.finnet.co.ke/" },
+  { name: "Sentinel Africa", logo: "/assets/sa.png", url: "https://sentinelafrica.com/" }
+];
+
 
   return (
     <section id="clients" className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden font-inter">
@@ -30,13 +31,12 @@ const Clients = () => {
             font-family: 'Inter', sans-serif;
         }
 
-        /* Define custom colors for the cyber theme */
         .bg-neon-blue { background-color: #00F0FF; } /* A bright cyan-blue */
         .bg-neon-green { background-color: #39FF14; } /* A bright lime-green */
         .text-neon-blue { color: #00F0FF; }
         .text-neon-green { color: #39FF14; }
 
-        /* Background grid pattern */
+     
         .bg-cyber-grid {
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                               linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
@@ -49,7 +49,7 @@ const Clients = () => {
             100% { background-position: -400px -400px; }
         }
 
-        /* Glassmorphism effect */
+       
         .glass-morphism {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -58,7 +58,7 @@ const Clients = () => {
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         }
 
-        /* Cyber text gradient */
+        
         .cyber-text {
             background: linear-gradient(90deg, #00F0FF, #39FF14);
             -webkit-background-clip: text;
@@ -108,7 +108,7 @@ const Clients = () => {
             animation: fade-in-slide-up 0.8s ease-out forwards;
         }
 
-        /* Staggered animation delays */
+        
         .delay-100 { animation-delay: 0.1s; }
         .delay-200 { animation-delay: 0.2s; }
         .delay-300 { animation-delay: 0.3s; }
@@ -127,11 +127,11 @@ const Clients = () => {
         `}
       </style>
 
-      {/* Background Animated Elements */}
+      
       <div className="absolute inset-0">
-        {/* Cyber grid pattern */}
+        
         <div className="absolute inset-0 bg-cyber-grid opacity-5"></div>
-        {/* Animated blur circles */}
+     
         <div className="absolute top-0 left-1/2 w-96 h-96 bg-neon-blue/5 rounded-full blur-3xl animate-float-blur delay-200"></div>
         <div className="absolute bottom-0 right-1/2 w-96 h-96 bg-neon-green/5 rounded-full blur-3xl animate-float-blur delay-700"></div>
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-neon-blue/3 rounded-full blur-3xl animate-float-blur delay-1200"></div>

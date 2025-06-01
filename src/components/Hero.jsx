@@ -26,13 +26,12 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen bg-gray-950 text-white pt-20 md:pt-24 overflow-hidden font-sans flex items-center justify-center">
-      {/* Futuristic Background Elements */}
-      {/* Layer 1: Large radial gradient for a central glow */}
+     
       <div className="absolute inset-0 z-0 opacity-30" style={{
         background: 'radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, transparent 70%)',
       }}></div>
 
-      {/* Layer 2: Subtle hexagonal grid pattern */}
+      
       <div className="absolute inset-0 z-0 opacity-5" style={{
         backgroundImage: `
           repeating-linear-gradient(45deg, transparent 0 2px, rgba(255,255,255,0.02) 2px 4px),
@@ -41,9 +40,9 @@ const Hero = () => {
         backgroundSize: '40px 40px',
       }}></div>
 
-      {/* Layer 3: Dynamic glowing lines/particles (conceptual, would need CSS animation) */}
+      
       <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-        {/* Example of a conceptual animated element - requires custom CSS keyframes */}
+      
         <div className="absolute top-1/4 left-1/4 w-px h-24 bg-blue-500 shadow-blue-500/50 animate-pulse-line" style={{ transform: 'rotate(45deg)' }}></div>
         <div className="absolute bottom-1/3 right-1/3 w-px h-20 bg-emerald-500 shadow-emerald-500/50 animate-pulse-line animation-delay-1000" style={{ transform: 'rotate(-30deg)' }}></div>
       </div>
@@ -103,11 +102,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Advanced Security Dashboard Mockup */}
+        
           <div className="relative flex justify-center items-center lg:justify-end animate-fade-in delay-800">
-            {/* Main container for the "dashboard" look */}
+           
             <div className="relative w-full max-w-xl bg-gray-850 rounded-2xl shadow-2xl p-6 border border-blue-700 overflow-hidden transform rotate-3 lg:rotate-0 transition-transform duration-500 ease-in-out hover:rotate-0">
-              {/* Top bar of the "dashboard" */}
+             
               <div className="flex items-center justify-between pb-4 border-b border-gray-700 mb-4">
                 <div className="flex space-x-2">
                   <span className="w-3 h-3 bg-red-500 rounded-full"></span>
@@ -124,7 +123,7 @@ const Hero = () => {
               
               <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-blue-600">
                 <img
-                  src="src\assets\kev.jpeg"
+                  src="public/assets/kev.jpeg"
                   alt="Cybersecurity professional working on advanced security systems"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/800x450/333333/E0E0E0?text=Image+Not+Found'; }}

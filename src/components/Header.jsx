@@ -20,7 +20,8 @@ const Header = () => {
     { href: '#services', label: 'Services' },
     { href: '#value-proposition', label: 'Solutions' },
     { href: '#why-choose-us', label: 'Why Us' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#contact', label: 'Contact' },
+    {href: '#clients', label:'clients'}
   ];
 
   const scrollToSection = (href) => {
@@ -45,7 +46,7 @@ const Header = () => {
               <div className="relative bg-white rounded-xl p-2 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-gray-100">
               
                 <img
-                  src="src/assets/WhatsApp Image 2025-05-28 at 15.24.03.jpeg"
+                  src="public/assets/cyberlogo.jpeg"
                   alt="Cyber Interactive Logo"
                   className="w-10 h-10 md:w-12 md:h-12 object-contain"
                   onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/40x40/E0E0E0/333333?text=Logo'; }}
