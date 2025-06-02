@@ -2,21 +2,21 @@ import React from 'react';
 
 const Clients = () => {
  const clients = [
-  { name: "Bloomberg Philanthropies", logo: "/assets/bloo.jpg", url: "https://www.bloomberg.org/" },
-  { name: "Maisha Bora Sacco Society Ltd", logo: "/assets/maisha.jpg", url: "https://maishaborasacco.com/" },
-  { name: "Sika Building Trust", logo: "/assets/sika.png", url: "https://kenya.sika.com/" },
-  { name: "Knowledge Hub Institute", logo: "/assets/Knowledge.png", url: "https://knowledgehub.co.ke/" },
-  { name: "Cyber Shujaa", logo: "/assets/cybershujaa.webp", url: "https://cybershujaa.co.ke/" },
-  { name: "NCBA", logo: "/assets/ncba.png", url: "https://ncbagroup.com/" },
-  { name: "Chuna DT Sacco Ltd", logo: "/assets/chuna.png", url: "https://chunasacco.co.ke/" },
-  { name: "Institute of Pension Management", logo: "/assets/pension.jpg", url: "https://ipm.ac.ke/" },
-  { name: "Nafasi Sacco", logo: "/assets/nafasi.png", url: "https://nafasisacco.com/" },
-  { name: "Ukoaji Sacco", logo: "/assets/uokoaji.jpg", url: "https://ukoajisacco.com/" },
-  { name: "Utabibu", logo: "/assets/utabibu.png", url: "https://utabibusacco.com/" },
-  { name: "KMA Sacco", logo: "/assets/kms.png", url: "https://kmasacco.com/" },
-  { name: "Pivot Assets", logo: "/assets/pivot.png", url: "https://pivotassets.co.ke/" },
-  { name: "Finnet", logo: "/assets/Finnet.png", url: "https://www.finnet.co.ke/" },
-  { name: "Sentinel Africa", logo: "/assets/sa.png", url: "https://sentinelafrica.com/" }
+  { name: "Bloomberg Philanthropies", logo: "assets/bloo.jpg", url: "https://www.bloomberg.org/" },
+  { name: "Maisha Bora Sacco Society Ltd", logo: "assets/maisha.jpg", url: "https://maishaborasacco.com/" },
+  { name: "Sika Building Trust", logo: "assets/sika.png", url: "https://kenya.sika.com/" },
+  { name: "Knowledge Hub Institute", logo: "assets/Knowledge.png", url: "https://knowledgehub.co.ke/" },
+  { name: "Cyber Shujaa", logo: "assets/cybershujaa.webp", url: "https://cybershujaa.co.ke/" },
+  { name: "NCBA", logo: "assets/ncba.png", url: "https://ncbagroup.com/" },
+  { name: "Chuna DT Sacco Ltd", logo: "assets/chuna.png", url: "https://chunasacco.co.ke/" },
+  { name: "Institute of Pension Management", logo: "assets/pension.jpg", url: "https://ipm.ac.ke/" },
+  { name: "Nafasi Sacco", logo: "assets/nafasi.png", url: "https://nafasisacco.com/" },
+  { name: "Ukoaji Sacco", logo: "assets/uokoaji.jpg", url: "https://ukoajisacco.com/" },
+  { name: "Utabibu", logo: "assets/utabibu.png", url: "https://utabibusacco.com/" },
+  { name: "KMA Sacco", logo: "assets/kms.png", url: "https://kmasacco.com/" },
+  { name: "Pivot Assets", logo: "assets/pivot.png", url: "https://pivotassets.co.ke/" },
+  { name: "Finnet", logo: "assets/Finnet.png", url: "https://www.finnet.co.ke/" },
+  { name: "Sentinel Africa", logo: "assets/sa.png", url: "https://sentinelafrica.com/" }
 ];
 
 

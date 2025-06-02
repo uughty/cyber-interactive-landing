@@ -10,14 +10,14 @@ const Hero = () => {
     }
   };
 
-  // List of key features highlighted in the hero section
+ 
   const features = [
     'ISO 27001 Certified Experts',
     '15+ Years Experience',
     '24/7 Security Monitoring'
   ];
 
-  // Statistical data for the dashboard widgets
+ 
   const stats = [
     { number: '500+', label: 'Clients Protected', icon: BarChart2, color: 'blue' },
     { number: '99.9%', label: 'Uptime Guarantee', icon: Activity, color: 'emerald' },
@@ -89,7 +89,7 @@ const Hero = () => {
               </button>
             </div>
 
-            {/* Key features list */}
+
             <div className="pt-8 animate-fade-in delay-700">
               <ul className="space-y-3 text-gray-200 text-md">
                 {features.map((feature, index) => (
@@ -123,7 +123,7 @@ const Hero = () => {
               
               <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-blue-600">
                 <img
-                  src="public/assets/kev.jpeg"
+                  src="assets/kev.jpeg"
                   alt="Cybersecurity professional working on advanced security systems"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/800x450/333333/E0E0E0?text=Image+Not+Found'; }}
@@ -153,13 +153,13 @@ const Hero = () => {
                   </div>
                 ))}
 
-                {/* System Status / Uptime Guarantee */}
+
                 <div className="col-span-1 sm:col-span-2 bg-blue-900/50 rounded-lg p-4 flex items-center justify-center space-x-3 shadow-md border border-blue-700 animate-pulse-slow">
                   <Shield className="w-6 h-6 text-blue-300" />
                   <span className="text-lg font-semibold text-blue-200">System <span className="text-emerald-400">Active</span> | <span className="text-gray-100">{stats.find(s => s.label === 'Uptime Guarantee')?.number}</span> {stats.find(s => s.label === 'Uptime Guarantee')?.label}</span>
                 </div>
 
-                {/* Dynamic Threat Activity Indicator */}
+
                 <div className="col-span-1 sm:col-span-2 bg-gray-900 rounded-lg p-4 flex items-center justify-between shadow-md border border-gray-700">
                     <div className="flex items-center space-x-3">
                         <AlertCircle className="w-6 h-6 text-red-500" />
@@ -169,7 +169,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Subtle background graphics for visual interest within dashboard */}
+             
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-400/5 rounded-full blur-xl -z-10 transform translate-x-1/2 translate-y-1/2"></div>
               <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-400/5 rounded-full blur-xl -z-10 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
